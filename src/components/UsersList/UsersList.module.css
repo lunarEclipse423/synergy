@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.viewportWrapper {
+  padding: 6px;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 10.092px;
+  background: #fff;
+  box-shadow: 0 6.95px 5.56px 0 rgba(0, 0, 0, 0.02),
+    0 16.7px 13.36px 0 rgba(0, 0, 0, 0.03), 0 31.45px 25.16px 0 rgba(0, 0, 0, 0.04),
+    0 56.09px 44.88px 0 rgba(0, 0, 0, 0.04), 0 104.93px 83.94px 0 rgba(0, 0, 0, 0.05),
+    0 251.15px 200.92px 0 rgba(0, 0, 0, 0.07);
+}
+
+.viewport {
+  position: relative;
+  max-width: 235px;
+  max-height: 270px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.viewport::-webkit-scrollbar {
+  width: 5px;
+}
+
+.viewport::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.viewport::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6d6d6d;
+}
+
+.wrapper {
+  position: absolute;
+  width: 226px;
+}
+
+.user {
+  padding: 5px 5px 5px 12px;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  color: #3a3a3a;
+  font-family: Inter, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.selected,
+.user:hover {
+  color: #3d4095;
+  background: rgba(61, 64, 149, 0.1);
+}
+
+.user:hover {
+  cursor: pointer;
+}
+
+.selected:hover {
+  cursor: auto;
+}
+
+.icon {
+  display: inline-block;
+  width: 12px;
+  height: 9px;
+  background-image: url("/check.svg");
+  visibility: hidden;
+}
+
+.selected > .icon {
+  visibility: visible;
+}
+
+.username {
+  display: inline-block;
+  margin-left: 10px;
+}

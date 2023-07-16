@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.usercardWrapper {
+  padding: 16px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  color: #3a3a3a;
+  font-family: Inter, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 6.95px 5.56px 0 rgba(0, 0, 0, 0.02),
+    0 16.7px 13.36px 0 rgba(0, 0, 0, 0.03), 0 31.45px 25.16px 0 rgba(0, 0, 0, 0.04),
+    0 56.09px 44.88px 0 rgba(0, 0, 0, 0.04), 0 104.93px 83.94px 0 rgba(0, 0, 0, 0.05),
+    0 251.15px 200.92px 0 rgba(0, 0, 0, 0.07);
+}
+
+.userProfile {
+  display: flex;
+  gap: 20px;
+}
+
+.userForm {
+  display: grid;
+  grid-template-columns: 85px 200px;
+  grid-row-gap: 8px;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1.597px solid rgba(66, 80, 102, 0.4);
+  background: #fff;
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: #56b280;
+}
+
+.button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+  background: #3d4095;
+  border: 0;
+  font-family: Inter, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all ease-in-out 0.3s;
+}
+
+.button:hover {
+  background: #dea95e;
+  cursor: pointer;
+}
